@@ -16,7 +16,7 @@ const UserList=()=>{
             const response=await axios.get('https://602e7c2c4410730017c50b9d.mockapi.io/users')
             const data=response.data.slice(10)
             if(!data){
-                alert('Failed to fetch the data')
+                alert('Failed to fetch the data or No data Found')
             }else{
                 setUserData(data)
                 setUser(data[0])
